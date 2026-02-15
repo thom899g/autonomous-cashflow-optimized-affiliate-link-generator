@@ -1,0 +1,22 @@
+# Kafka Configuration
+kafka:
+  bootstrap_servers: ["localhost:9092", "localhost:9093"]
+  topic:
+    incoming_data: "affiliate_performance"
+    processed_data: "optimized_links"
+
+# Flink Configuration
+flink:
+  jobmanager_address: "localhost:8081"
+  rest_api_port: 8080
+
+# Analytics Integration
+analytics:
+  superset:
+    host: "http://localhost:8080"
+    token: "your_token_here"
+
+# Publishing Channels
+publishing:
+  channels: ["social_media", "email_marketing", "web"]
+  default_template: "templates/default.html"
